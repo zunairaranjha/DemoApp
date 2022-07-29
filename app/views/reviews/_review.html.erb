@@ -1,0 +1,6 @@
+<p><%= review.rating %></p>
+<p><%= review.comment %></p>
+
+<%= link_to 'Edit', edit_post_review_path(review.post, review),class: "btn btn-success btn-sm" %>
+
+<%= link_to 'Delete', post_review_path(review.post, review), data: {turbo_method: :delete, confirm: "Are you sure"},class: "btn btn-danger btn-sm" %>

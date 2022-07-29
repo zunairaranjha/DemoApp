@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>App</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+  <nav class="navbar navbar-default ">
+  <div class="container">
+  <div class="navbar-header">
+  <%= link_to "DemoApp", root_path, class: "navbar-brand" %>
+  </div>
+  <ul class="navbar navbar-nav">
+  <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-primary btn-sm" %>
+  <% if user_signed_in? %>
+  <%= link_to "Sign out", destroy_user_session_path, :method => :delete, class: "btn btn-primary btn-sm" %>
+  <% else %>
+<%= link_to "Log In", new_user_session_path, class: "btn btn-primary btn-sm" %>
+<% end %>
+</ul>
+<ul class="navbar navbar-nav navbar-right">
+<% if user_signed_in? %>
+<%= link_to "Add Post", new_post_path, class: "btn btn-success btn-sm"  %>
+<% end %>
+</ul>
+  </div>
+</nav>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+    <%= yield %>
+  </body>
+</html>
