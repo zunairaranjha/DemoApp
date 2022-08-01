@@ -5,11 +5,12 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+NUM_POSTS = 50
 
-5.times do
-     Post.create([{
-        title: Faker::name,
-        content: Faker::name
+NUM_POSTS.times do
+  
 
-         }])
+     Post.create( 
+          title: Faker::Movies::StarWars.quote , 
+          content: Faker:: TvShows::NewGirl.quote)
     end
