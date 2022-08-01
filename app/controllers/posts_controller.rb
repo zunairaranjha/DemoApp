@@ -19,24 +19,23 @@ class PostsController < ApplicationController
         
         @post = current_user.posts.build(post_params)
         if @post.save
-            redirect_to root_path
+            render json: root_path, staus:200
         else
-            render 'new'
+            render json: 'New' 
         end
     end
     def edit
     end
     def update
         if @post.update(post_params)
-            redirect_to post_path(@post)
+            render json: post_path(@post), staus:200
         else
-            render 'edit'
+            render json: 'edit'
         end
     end
 def destroy
     @post.destroy
-
-    redirect_to root_path, status: :see_other
+    render json: root_path, staus: :see_other
 end
 private
 def post_params

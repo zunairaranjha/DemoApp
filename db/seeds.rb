@@ -7,10 +7,10 @@
 #   Character.create(name: "Luke", movie: movies.first)
 NUM_POSTS = 50
 
-NUM_POSTS.times do
+NUM_POSTS.times do |index|
   
 
      Post.create( 
-          title: Faker::Movies::StarWars.quote , 
-          content: Faker:: TvShows::NewGirl.quote)
+          title: Faker::Movie.title, 
+          content: Faker::Movie.quote)
     end

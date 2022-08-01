@@ -10,18 +10,18 @@ class ReviewsController < ApplicationController
         @review.post_id = @post.id
         @review.user_id = current_user.id
         if @review.save
-            redirect_to post_path(@post)
+            render json: post_path(@post), staus:200
         else
-            render 'new'
+            render json: 'new'
         end
     end
     def edit
      end
     def update
          if @review.update(review_params)
-            redirect_to post_path(@post)
+            render json: post_path(@post), staus:200
          else
-            render 'edit'
+            render json: 'edit'
          end
     end
     def show
@@ -30,7 +30,7 @@ class ReviewsController < ApplicationController
     end
 def destroy
     @review.destroy
-    redirect_to post_path(@post)
+    render json: post_path(@post), staus:200
 end
 private
    def review_params
