@@ -2,12 +2,12 @@ module Mutations
   class CreatePostMutation < BaseMutation
     field :post, Types::PostType, null: false
 
-    argument :title, String, required: true do
+     argument :title, String, required: true do
       description "Title field is a string type."
-  end
-  argument :content, String required: true do
+     end
+    argument :content, String required: true do
     description "Main content."
-  end
+    end
    
   def resolve(title:, content:)
     @post = Post.new(title: title, content: content)
