@@ -1,5 +1,7 @@
 module Types
   class QueryType < Types::BaseObject
+
+
     # Add `node(id: ID!) and `nodes(ids: [ID!]!)`
     include GraphQL::Types::Relay::HasNodeField
     include GraphQL::Types::Relay::HasNodesField
@@ -8,10 +10,19 @@ module Types
     # They will be entry points for queries on your schema.
 
     # TODO: remove me
-    field :posts, String, null: true,
-      description: "An example field added by the generator"
+ 
+    field :posts, [Types::PostType], null: true,
+      description: "Return list of Posts."
+     
     def posts
      Post.all
+    end
+  
+    field :post, Types::PostType, null: false do
+      argument :id, ID, required: true
+    end
+    def post(id:)
+      Post.find(id)
     end
   end
 end

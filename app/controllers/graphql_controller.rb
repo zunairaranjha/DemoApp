@@ -1,4 +1,12 @@
 class GraphqlController < ApplicationController
+
+
+  def ready?(**_args)
+    if !context[:current_user]
+      raise GraphQL:ExecutionError," You need to log in"
+    else
+      true
+    end
   # If accessing from outside this domain, nullify the session
   # This allows for outside API access while preventing CSRF attacks,
   # but you'll have to authenticate your user separately
@@ -7,10 +15,11 @@ class GraphqlController < ApplicationController
   def execute
     variables = prepare_variables(params[:variables])
     query = params[:query]
+
     operation_name = params[:operationName]
     context = {
-      # Query context goes here, for example:
-      # current_user: current_user,
+    # Query context goes here, for example:
+       #current_user: current_user,
     }
     result = AppSchema.execute(query, variables: variables, context: context, operation_name: operation_name)
     render json: result
@@ -40,6 +49,8 @@ class GraphqlController < ApplicationController
       raise ArgumentError, "Unexpected parameter: #{variables_param}"
     end
   end
+
+
 
   def handle_error_in_development(e)
     logger.error e.message

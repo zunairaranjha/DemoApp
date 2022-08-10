@@ -14,6 +14,7 @@
 # Configure Using Gemfile
 # gem "pg"
 #
+
 default: &default
   adapter: postgresql
   encoding: unicode
@@ -21,6 +22,7 @@ default: &default
   username: postgres
   password: "Cfd@11044"
   host: localhost
+  # url: postgresql://postgres:Cfd%4011044@localhost:5432/App_development
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
