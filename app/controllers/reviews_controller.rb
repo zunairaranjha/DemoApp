@@ -2,6 +2,12 @@ class ReviewsController < ApplicationController
     before_action :find_post
     before_action :find_review, only: [:edit, :update, :destroy]
 
+
+    def show
+        # postsavg= Post.all.average(:rate).to_i
+        # @post=Post.all.where(:rate => postsavg)
+        # render json: @post, status:200
+      end
     def new
         @review = Review.new
     end

@@ -1,9 +1,11 @@
 <div class="col-md-8">
 <h2><%= @post.title %></h2>
 <h3><%= @post.content %></h3>
-<p>Average Rating: <%=@average_review %> </p>
+<p>Average Rating: <%= @average_review %> </p>
 <p> Based On <%= @post.reviews.count %> reviews. </p> 
+
 </div>
+
 <%= link_to 'Back', root_path,class: "btn btn-primary btn-sm" %>
 <%= render @post.reviews %>
 <%= link_to 'Add Review', new_post_review_path(@post),class: "btn btn-warning btn-sm" %>
@@ -13,6 +15,7 @@
 
 <%= link_to 'Edit Post', edit_post_path(@post),class: "btn btn-success btn-sm" %>
 <%= link_to 'Delete Post', post_path(@post), data: {turbo_method: :delete, turbo_confirm: 'Are you sure'},class: "btn btn-danger btn-sm" %>
+
 
 <% end %>
 <% end %>

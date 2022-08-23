@@ -1,25 +1,27 @@
 class GraphqlController < ApplicationController
 
 
-  def ready?(**_args)
-    if !context[:current_user]
-      raise GraphQL:ExecutionError," You need to log in"
-    else
-      true
-    end
+  # def ready?(**_args)
+  #   if !context[:current_user]
+  #     raise GraphQL:ExecutionError," You need to log in"
+  #   else
+  #     true
+  #   end
+  # end
+  
   # If accessing from outside this domain, nullify the session
   # This allows for outside API access while preventing CSRF attacks,
   # but you'll have to authenticate your user separately
   # protect_from_forgery with: :null_session
 
   def execute
+   
     variables = prepare_variables(params[:variables])
     query = params[:query]
-
     operation_name = params[:operationName]
     context = {
     # Query context goes here, for example:
-       #current_user: current_user,
+       current_user: lookup_current_account_from_token   
     }
     result = AppSchema.execute(query, variables: variables, context: context, operation_name: operation_name)
     render json: result
@@ -27,9 +29,12 @@ class GraphqlController < ApplicationController
     raise e unless Rails.env.development?
     handle_error_in_development(e)
   end
-
   private
-
+  def lookup_current_account_from_token
+    headers = request.headers["Authorization"]
+    token = headers&.gsub(/\AToken\s/,'')
+    GlobalID::Locator.locate_signed(token, for: 'graphql')
+  end
   # Handle variables in form data, JSON body, or a blank value
   def prepare_variables(variables_param)
     case variables_param

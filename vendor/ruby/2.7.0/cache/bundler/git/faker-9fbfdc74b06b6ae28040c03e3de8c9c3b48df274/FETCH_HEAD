@@ -1,9 +1,6 @@
 4a3c41ae890c29aef53395cdd33534ae0531b4eb		branch 'circleci' of https://github.com/faker-ruby/faker
-b2c5015a11bbc85384ff3e31d320f3d06a9d018e		branch 'dependabot/bundler/rubocop-1.28.2' of https://github.com/faker-ruby/faker
-c042511555cf0eeaacec149c8d3bbd074b17485f		branch 'dependabot/bundler/simplecov-0.21.1' of https://github.com/faker-ruby/faker
-69a51e23f53a7d98930a1da405d65ea5132e9528		branch 'dependabot/bundler/yard-0.9.28' of https://github.com/faker-ruby/faker
 fa2aeb37bebf0ab74afe480d8b675da8ce5fce70		branch 'jruby' of https://github.com/faker-ruby/faker
-45f77721df31780c3bb8a01bc4b03d50380f8e55		branch 'master' of https://github.com/faker-ruby/faker
+35a48ec6344b8a2581ed3b02d08b3c9f74f3ef27		branch 'master' of https://github.com/faker-ruby/faker
 b913e7cba609b42c74f7968840270c74a1cbbd0b	not-for-merge	tag '1.9.4' of https://github.com/faker-ruby/faker
 401948a0c89acf81c748ea2d2988162e9fd94cb2	not-for-merge	tag '1.9.6' of https://github.com/faker-ruby/faker
 ed1ef707e272772ef70a1e838cb2f6863b22b48b	not-for-merge	tag '2.0' of https://github.com/faker-ruby/faker

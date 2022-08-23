@@ -29,7 +29,7 @@ module Kernel
       raise error
     else
       # Note that require registers to $LOADED_FEATURES while load does not.
-      ret = require_without_bootsnap(resolved)
+       ret = require_without_bootsnap(resolved)
       Bootsnap::LoadPathCache.loaded_features_index.register(string_path, resolved)
       return ret
     end

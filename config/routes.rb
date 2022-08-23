@@ -11,4 +11,7 @@ Rails.application.routes.draw do
   resources :reviews
  end
  root 'posts#index'
+ get '/posts/topposts' => 'posts#topposts'
+
+ get '/users' => 'users#index' 
 end

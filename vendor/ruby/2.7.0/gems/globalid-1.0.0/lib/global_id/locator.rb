@@ -58,7 +58,6 @@ class GlobalID
       def locate_signed(sgid, options = {})
         SignedGlobalID.find sgid, options
       end
-
       # Takes an array of SignedGlobalIDs or strings that can be turned into a SignedGlobalIDs.
       # The SignedGlobalIDs are located using Model.find(array_of_ids), so the models must respond to
       # that finder signature.

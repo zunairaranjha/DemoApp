@@ -1,18 +1,13 @@
 class Post < ApplicationRecord
   validates :content, presence: true, length: { minimum: 1 }
   validates :title, presence: true, length: { minimum: 1 }
+  belongs_to :user
+  has_many :reviews
+  
 
-    belongs_to :user
-    has_many :reviews
-    
-    
-
-    # validate :date_scope
-
-    # private
-    #   def date_scope
-    #     if Post.where("user_id = ? AND DATE(created_at) = DATE(?)", self.user_id, Time.now).all.any?
-    #       errors.add(:user_id, "Can only post once a day")
-    #     end
-    #   end
+    Post.where("user_id is null").each do |ps|
+      ps.user_id = User.ids.sample
+      ps.save
+  end
 end
+

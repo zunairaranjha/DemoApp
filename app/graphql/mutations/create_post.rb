@@ -7,7 +7,7 @@ class Mutations::CreatePost < Mutations::BaseMutation
   
     def resolve( title:, content:)
       post = Post.new( title: title, content: content,   user_id: [1,2,3].sample)
-  
+      
       if post.save
         { post: post, errors: [] }
       else
