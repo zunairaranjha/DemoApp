@@ -27,7 +27,7 @@ argument :email, String, required: true
 argument :password, String, required: true
 end
 def register(**args)
-  user= User.new(args)
+  user = User.new(args)
   if user.save
     user
   else

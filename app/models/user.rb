@@ -6,7 +6,7 @@ class User < ApplicationRecord
   has_many :reviews
   validates :email, presence: true, uniqueness: true
   validates :encrypted_password, presence: true
-  validate :user_quota, :on => :create  
+  # validate :user_quota, :on => :create  
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable

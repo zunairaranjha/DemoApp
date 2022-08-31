@@ -7,10 +7,10 @@ module Mutations
     field :post, Types::PostType, null: true
     field :errors, [String], null: false
     def resolve(id:, user_id:, **attributes)
-    post = Post.find_by_id(id)
+    post = Post.find_by(id: id, user_id: user_id)
     return { errors: ["Post not exist"] } unless post
-    post = Post.find_by_id(user_id)
-    return { errors: ["UserID not exist"] } unless post
+    # post = Post.find_by(user_id: user_id)
+    # return { errors: ["UserID not exist"] } unless post
     post.assign_attributes(attributes)
     if post.save
     { post: post, errors: [] }
