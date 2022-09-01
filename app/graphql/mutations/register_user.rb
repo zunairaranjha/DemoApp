@@ -1,21 +1,22 @@
-module Mutations
-  class RegisterUser < BaseMutation
-field :user, Types::UserType, null: false do
-argument :email, String, required: true
+class Mutations::RegisterUser < Mutations::BaseMutation
+
+    argument :email, String, required: true
     argument :password, String, required: true
     argument :name, String, required: true
-      end
+   
+    field :user, Types::UserType, null: false 
+
     def resolve(**args)
       user = User.new(args)
       if user.save
-        user
+        { user: user, errors: [] }
+
       else
-        raise GraphQL::ExecutionError.new("Register Failed!")
+        { user: nil, errors: user.errors.full_messages }
       end
     end
     
     
-    end
     end
     
     
