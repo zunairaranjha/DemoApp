@@ -7,7 +7,7 @@ module Mutations
     post = Post.find_by_id(id)
     return { error: "Post not exist" } unless post
     post.destroy!
-    return { message: "UserID was deleted sucessfully" }
+     { message: "UserID was deleted sucessfully" }
     end
   end
 end

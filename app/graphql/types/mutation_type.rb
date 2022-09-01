@@ -1,5 +1,7 @@
 module Types
   class MutationType < Types::BaseObject
+    field :register_user, mutation: Mutations::RegisterUser
+    # field :login, mutation: Mutations::Login
     field :sign_out_user, mutation: Mutations::SignOutUser
       # TODO: remove me
       field :create_post, mutation: Mutations::CreatePost
@@ -10,6 +12,7 @@ module Types
     field :login,Types::UserType, null: false do
       argument :email, String, required: true
       argument :password, String, required: true
+
      end
      def login(email:, password:)
       user= User.find_by(email: email)
@@ -22,18 +25,20 @@ module Types
       end
     end
 # Register User method==========>
-field :register, Types::UserType, null: false do
-argument :email, String, required: true
-argument :password, String, required: true
-end
-def register(**args)
-  user = User.new(args)
-  if user.save
-    user
-  else
-    raise GraphQL::ExecutionError.new("Register Failed!")
-  end
-end
+# field :register, Types::UserType, null: false do
+# argument :email, String, required: true
+# argument :password, String, required: true
+# argument :name, String, required: true
+
+# end
+# def register(**args)
+#   user = User.new(args)
+#   if user.save
+#     user
+#   else
+#     raise GraphQL::ExecutionError.new("Register Failed!")
+#   end
+# end
 
 
 end

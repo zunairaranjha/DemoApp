@@ -70,4 +70,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+# TODO need to check do we only need this gem only in Developement
 gem "graphiql-rails", group: :development
