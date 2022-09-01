@@ -79,6 +79,7 @@ GEM
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
     builder (3.2.4)
+    bundler-unload (1.0.2)
     capybara (3.37.1)
       addressable
       matrix
@@ -104,6 +105,7 @@ GEM
     digest (3.1.0-java)
     erubi (1.11.0)
     execjs (2.8.1)
+    executable-hooks (1.6.1)
     faker (2.22.0)
       i18n (>= 1.8.11, < 2)
     ffi (1.15.5)
@@ -221,6 +223,9 @@ GEM
       actionpack (>= 5.0)
       railties (>= 5.0)
     rexml (3.2.5)
+    rubygems-bundler (1.4.5)
+      bundler-unload (>= 1.0.2)
+      executable-hooks (>= 1.5.0)
     rubyzip (2.3.2)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -294,9 +299,11 @@ DEPENDENCIES
   bcrypt (~> 3.1.13)
   bootsnap
   bootstrap-sass (~> 3.4, >= 3.4.1)
+  bundler-unload (~> 1.0, >= 1.0.2)
   capybara
   debug
   devise (~> 4.8, >= 4.8.1)
+  executable-hooks (~> 1.6, >= 1.6.1)
   faker
   graphiql-rails
   graphql
@@ -308,6 +315,7 @@ DEPENDENCIES
   rack-attack
   rails (~> 7.0.3, >= 7.0.3.1)
   rails_rate_limiter
+  rubygems-bundler (~> 1.4, >= 1.4.5)
   sassc-rails
   selenium-webdriver
   simple_form (~> 5.1)
@@ -319,7 +327,7 @@ DEPENDENCIES
   webdrivers
 
 RUBY VERSION
-   ruby 2.7.2p137
+   ruby 3.1.2p20
 
 BUNDLED WITH
    2.1.4
