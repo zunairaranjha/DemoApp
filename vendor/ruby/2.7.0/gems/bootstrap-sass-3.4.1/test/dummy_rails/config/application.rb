@@ -19,7 +19,6 @@ require 'uglifier'
 module Dummy
   class Application < Rails::Application
     config.assets.enabled = true if config.assets.respond_to?(:enabled)
-    config.assets.initialize_on_precompile = false
     config.assets.precompile += %w( application.css application.js )
     config.to_prepare do
       if ENV['VERBOSE']
