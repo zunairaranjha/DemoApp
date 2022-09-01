@@ -42,6 +42,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "bootsnap", require: false
  gem 'rack-attack'
 # Use Sass to process CSS
+gem 'uglifier'
+
 gem "sassc-rails"
 gem 'executable-hooks', '~> 1.6', '>= 1.6.1'
 gem 'bundler-unload', '~> 1.0', '>= 1.0.2'
