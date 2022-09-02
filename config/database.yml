@@ -19,7 +19,7 @@ default: &default
   encoding: unicode
   port: 5432
   username: postgres
-  password: "Cfd@11044"
+  password: Cfd@11044
   host: localhost
   #url: postgresql://postgres:Cfd%4011044@localhost:5432/App_development
   # For details on connection pooling, see Rails configuration guide
@@ -87,5 +87,4 @@ test:
 production:
   <<: *default
   database: <%= ENV['DATABASE_URL'] %>
-   username: App
   password: <%= ENV["APP_DATABASE_PASSWORD"] %>
