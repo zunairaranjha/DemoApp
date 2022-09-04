@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "2.7.2"
+ruby "3.1.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3", ">= 7.0.3.1"
@@ -10,7 +10,7 @@ gem 'faker'
 gem "sprockets-rails"
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 # Use postgresql as the database for Active Record
-gem "pg"
+ gem "pg"
 gem 'simple_form', '~> 5.1'
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
@@ -44,7 +44,7 @@ gem "bootsnap", require: false
  gem 'rack-attack'
 # Use Sass to process CSS
 gem "sassc-rails"
-gem 'nokogiri'
+# gem 'nokogiri', '~> 1.13', '>= 1.13.8'
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
@@ -58,7 +58,7 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
   gem 'bcrypt', '~> 3.1.13'
- 
+ gem 'actiontext'
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
@@ -68,9 +68,10 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem "capybara"
+  # gem "capybara"
   gem "selenium-webdriver"
-  gem "webdrivers"
+  # gem "webdrivers"
+  # gem 'webdrivers', '~> 3.1'
   # gem 'rspec-rails'
 
 end
