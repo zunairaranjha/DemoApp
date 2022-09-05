@@ -86,5 +86,13 @@ test:
 #
 production:
   <<: *default
-  database: <%= ENV['DATABASE_URL'] %>
-  password: <%= ENV["APP_DATABASE_PASSWORD"] %>
+  # adapter: postgresql
+  # encoding: unicode
+  # # port: 5432
+  # username: postgres
+  # password: Cfd@11044
+  # host: localhost
+  database: App_production
+  
+  #  database: <%= ENV['DATABASE_URL'] %>
+  # # password: <%= ENV["APP_DATABASE_PASSWORD"] %>
