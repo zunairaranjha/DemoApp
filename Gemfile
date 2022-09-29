@@ -10,7 +10,7 @@ gem 'faker'
 gem "sprockets-rails"
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 # Use postgresql as the database for Active Record
-gem "pg", "~> 1.1"
+ gem "pg"
 gem 'simple_form', '~> 5.1'
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
@@ -37,17 +37,14 @@ gem 'rails_rate_limiter'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
+gem 'bundler'
+# gem 'bundler-unload'
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
  gem 'rack-attack'
 # Use Sass to process CSS
-gem 'uglifier'
-
 gem "sassc-rails"
-gem 'executable-hooks', '~> 1.6', '>= 1.6.1'
-gem 'bundler-unload', '~> 1.0', '>= 1.0.2'
-gem 'rubygems-bundler', '~> 1.4', '>= 1.4.5'
+# gem 'nokogiri', '~> 1.13', '>= 1.13.8'
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
@@ -61,6 +58,7 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
   gem 'bcrypt', '~> 3.1.13'
+ gem 'actiontext'
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
@@ -70,9 +68,10 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem "capybara"
+  # gem "capybara"
   gem "selenium-webdriver"
-  gem "webdrivers"
+  # gem "webdrivers"
+  # gem 'webdrivers', '~> 3.1'
   # gem 'rspec-rails'
 
 end
