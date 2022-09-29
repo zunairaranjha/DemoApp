@@ -22,5 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-# DemoApp
-# DemoApp
+
+<<<<<<< HEAD
+=======
+>>>>>>> fc65e697 (algo)

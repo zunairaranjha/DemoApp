@@ -30,8 +30,11 @@ Dummy::Application.configure do
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
+<<<<<<< HEAD
   # config.assets.js_compressor = Uglifier.new(harmony: true)
 
+=======
+>>>>>>> fc65e697 (algo)
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.

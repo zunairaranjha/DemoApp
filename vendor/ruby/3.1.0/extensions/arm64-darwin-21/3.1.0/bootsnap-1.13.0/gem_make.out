@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 current directory: /Users/zunairaranjha/Desktop/projects/Demoapp/App/vendor/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
 /Users/zunairaranjha/.rvm/rubies/ruby-3.1.2/bin/ruby -I /Users/zunairaranjha/.rvm/rubies/ruby-3.1.2/lib/ruby/3.1.0 -r ./siteconf20220901-87319-csfznf.rb extconf.rb
 creating Makefile
@@ -6,10 +7,26 @@ current directory: /Users/zunairaranjha/Desktop/projects/Demoapp/App/vendor/ruby
 make DESTDIR\= clean
 
 current directory: /Users/zunairaranjha/Desktop/projects/Demoapp/App/vendor/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
+=======
+current directory: /Users/zunairaranjha/Desktop/projects/DemoApp-main/vendor/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
+/Users/zunairaranjha/.rvm/rubies/ruby-3.1.2/bin/ruby -I /Users/zunairaranjha/.rvm/rubies/ruby-3.1.2/lib/ruby/3.1.0 -r ./siteconf20220922-18704-m859nj.rb extconf.rb
+creating Makefile
+
+current directory: /Users/zunairaranjha/Desktop/projects/DemoApp-main/vendor/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: /Users/zunairaranjha/Desktop/projects/DemoApp-main/vendor/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
+>>>>>>> fc65e697 (algo)
 make DESTDIR\=
 compiling bootsnap.c
 linking shared-object bootsnap/bootsnap.bundle
 
+<<<<<<< HEAD
 current directory: /Users/zunairaranjha/Desktop/projects/Demoapp/App/vendor/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
 make DESTDIR\= install
 /opt/homebrew/opt/coreutils/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20220901-87319-8rafz/bootsnap
+=======
+current directory: /Users/zunairaranjha/Desktop/projects/DemoApp-main/vendor/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\= install
+/opt/homebrew/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20220922-18704-tphpl5/bootsnap
+>>>>>>> fc65e697 (algo)

@@ -32,8 +32,13 @@ rubyhdrdir = $(includedir)/$(RUBY_VERSION_NAME)
 vendorarchdir = $(vendorlibdir)/$(sitearch)
 vendorlibdir = $(vendordir)/$(ruby_version)
 vendordir = $(rubylibprefix)/vendor_ruby
+<<<<<<< HEAD
 sitearchdir = $(DESTDIR)./.gem.20220901-87319-1vjwf2
 sitelibdir = $(DESTDIR)./.gem.20220901-87319-1vjwf2
+=======
+sitearchdir = $(DESTDIR)./.gem.20220922-18704-as9mg1
+sitelibdir = $(DESTDIR)./.gem.20220922-18704-as9mg1
+>>>>>>> fc65e697 (algo)
 sitedir = $(rubylibprefix)/site_ruby
 rubyarchdir = $(rubylibdir)/$(arch)
 rubylibdir = $(rubylibprefix)/$(ruby_version)
@@ -85,13 +90,22 @@ debugflags = -ggdb3
 warnflags = 
 cppflags = 
 CCDLFLAGS = -fno-common
+<<<<<<< HEAD
 CFLAGS   = $(CCDLFLAGS) -O3 -I/opt/homebrew/opt/libyaml/include -I/opt/homebrew/opt/libksba/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/zlib/include -I/opt/homebrew/opt/openssl@1.1/include $(cflags) -fno-common -pipe  $(ARCH_FLAG)
+=======
+CFLAGS   = $(CCDLFLAGS) $(cflags)  -fno-common -pipe  $(ARCH_FLAG)
+>>>>>>> fc65e697 (algo)
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir) -I/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi
 DEFS     = 
 CPPFLAGS = -DRUBY_EXTCONF_H=\"$(RUBY_EXTCONF_H)\" -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
 CXXFLAGS = $(CCDLFLAGS) -fdeclspec  $(ARCH_FLAG)
+<<<<<<< HEAD
 ldflags  = -L. -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -fstack-protector-strong  -pthread
 dldflags = -L/opt/homebrew/opt/libyaml/lib -L/opt/homebrew/opt/libksba/lib -L/opt/homebrew/opt/readline/lib -L/opt/homebrew/opt/zlib/lib -L/opt/homebrew/opt/openssl@1.1/lib -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress 
+=======
+ldflags  = -L. -fstack-protector-strong  -pthread
+dldflags = -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress 
+>>>>>>> fc65e697 (algo)
 ARCH_FLAG = 
 DLDFLAGS = $(ldflags) $(dldflags) $(ARCH_FLAG)
 LDSHARED = $(CC) -dynamic -bundle
@@ -116,8 +130,13 @@ ruby_headers = $(hdrdir)/ruby.h $(hdrdir)/ruby/backward.h $(hdrdir)/ruby/ruby.h 
 RM = rm -f
 RM_RF = rm -fr
 RMDIRS = rmdir -p
+<<<<<<< HEAD
 MAKEDIRS = /opt/homebrew/opt/coreutils/bin/gmkdir -p
 INSTALL = /opt/homebrew/opt/coreutils/bin/ginstall -c
+=======
+MAKEDIRS = /opt/homebrew/bin/gmkdir -p
+INSTALL = /opt/homebrew/bin/ginstall -c
+>>>>>>> fc65e697 (algo)
 INSTALL_PROG = $(INSTALL) -m 0755
 INSTALL_DATA = $(INSTALL) -m 644
 COPY = cp

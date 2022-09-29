@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 current directory: /Users/zunairaranjha/Desktop/projects/Demoapp/App/vendor/ruby/3.1.0/gems/sassc-2.4.0/ext
 /Users/zunairaranjha/.rvm/rubies/ruby-3.1.2/bin/ruby -I /Users/zunairaranjha/.rvm/rubies/ruby-3.1.2/lib/ruby/3.1.0 -r ./siteconf20220901-87319-z7n4qt.rb extconf.rb
 creating Makefile
@@ -6,6 +7,16 @@ current directory: /Users/zunairaranjha/Desktop/projects/Demoapp/App/vendor/ruby
 make DESTDIR\= clean
 
 current directory: /Users/zunairaranjha/Desktop/projects/Demoapp/App/vendor/ruby/3.1.0/gems/sassc-2.4.0/ext
+=======
+current directory: /Users/zunairaranjha/Desktop/projects/DemoApp-main/vendor/ruby/3.1.0/gems/sassc-2.4.0/ext
+/Users/zunairaranjha/.rvm/rubies/ruby-3.1.2/bin/ruby -I /Users/zunairaranjha/.rvm/rubies/ruby-3.1.2/lib/ruby/3.1.0 -r ./siteconf20220922-18704-yx6kty.rb extconf.rb
+creating Makefile
+
+current directory: /Users/zunairaranjha/Desktop/projects/DemoApp-main/vendor/ruby/3.1.0/gems/sassc-2.4.0/ext
+make DESTDIR\= clean
+
+current directory: /Users/zunairaranjha/Desktop/projects/DemoApp-main/vendor/ruby/3.1.0/gems/sassc-2.4.0/ext
+>>>>>>> fc65e697 (algo)
 make DESTDIR\=
 compiling ./libsass/src/ast.cpp
 compiling ./libsass/src/ast2c.cpp
@@ -75,6 +86,12 @@ compiling ./libsass/src/util_string.cpp
 compiling ./libsass/src/values.cpp
 linking shared-object sassc/libsass.bundle
 
+<<<<<<< HEAD
 current directory: /Users/zunairaranjha/Desktop/projects/Demoapp/App/vendor/ruby/3.1.0/gems/sassc-2.4.0/ext
 make DESTDIR\= install
 /opt/homebrew/opt/coreutils/bin/ginstall -c -m 0755 libsass.bundle ./.gem.20220901-87319-g727ao/sassc
+=======
+current directory: /Users/zunairaranjha/Desktop/projects/DemoApp-main/vendor/ruby/3.1.0/gems/sassc-2.4.0/ext
+make DESTDIR\= install
+/opt/homebrew/bin/ginstall -c -m 0755 libsass.bundle ./.gem.20220922-18704-xfe7y0/sassc
+>>>>>>> fc65e697 (algo)

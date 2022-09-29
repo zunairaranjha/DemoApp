@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 current directory: /Users/zunairaranjha/Desktop/projects/Demoapp/App/vendor/ruby/3.1.0/gems/ffi-1.15.5/ext/ffi_c
 /Users/zunairaranjha/.rvm/rubies/ruby-3.1.2/bin/ruby -I /Users/zunairaranjha/.rvm/rubies/ruby-3.1.2/lib/ruby/3.1.0 -r ./siteconf20220901-87319-rp5f4n.rb extconf.rb
+=======
+current directory: /Users/zunairaranjha/Desktop/projects/DemoApp-main/vendor/ruby/3.1.0/gems/ffi-1.15.5/ext/ffi_c
+/Users/zunairaranjha/.rvm/rubies/ruby-3.1.2/bin/ruby -I /Users/zunairaranjha/.rvm/rubies/ruby-3.1.2/lib/ruby/3.1.0 -r ./siteconf20220922-18704-gj9lgh.rb extconf.rb
+>>>>>>> fc65e697 (algo)
 checking for ffi_prep_closure_loc() in -lffi... yes
 checking for ffi_prep_cif_var()... yes
 checking for ffi_raw_call()... yes
@@ -8,10 +13,17 @@ checking for whether -pthread is accepted as LDFLAGS... yes
 creating extconf.h
 creating Makefile
 
+<<<<<<< HEAD
 current directory: /Users/zunairaranjha/Desktop/projects/Demoapp/App/vendor/ruby/3.1.0/gems/ffi-1.15.5/ext/ffi_c
 make DESTDIR\= clean
 
 current directory: /Users/zunairaranjha/Desktop/projects/Demoapp/App/vendor/ruby/3.1.0/gems/ffi-1.15.5/ext/ffi_c
+=======
+current directory: /Users/zunairaranjha/Desktop/projects/DemoApp-main/vendor/ruby/3.1.0/gems/ffi-1.15.5/ext/ffi_c
+make DESTDIR\= clean
+
+current directory: /Users/zunairaranjha/Desktop/projects/DemoApp-main/vendor/ruby/3.1.0/gems/ffi-1.15.5/ext/ffi_c
+>>>>>>> fc65e697 (algo)
 make DESTDIR\=
 compiling AbstractMemory.c
 compiling ArrayType.c
@@ -38,6 +50,12 @@ compiling Variadic.c
 compiling ffi.c
 linking shared-object ffi_c.bundle
 
+<<<<<<< HEAD
 current directory: /Users/zunairaranjha/Desktop/projects/Demoapp/App/vendor/ruby/3.1.0/gems/ffi-1.15.5/ext/ffi_c
 make DESTDIR\= install
 /opt/homebrew/opt/coreutils/bin/ginstall -c -m 0755 ffi_c.bundle ./.gem.20220901-87319-1vjwf2
+=======
+current directory: /Users/zunairaranjha/Desktop/projects/DemoApp-main/vendor/ruby/3.1.0/gems/ffi-1.15.5/ext/ffi_c
+make DESTDIR\= install
+/opt/homebrew/bin/ginstall -c -m 0755 ffi_c.bundle ./.gem.20220922-18704-as9mg1
+>>>>>>> fc65e697 (algo)

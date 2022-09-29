@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 current directory: /Users/zunairaranjha/Desktop/projects/Demoapp/App/vendor/ruby/3.1.0/gems/pg-1.4.3/ext
 /Users/zunairaranjha/.rvm/rubies/ruby-3.1.2/bin/ruby -I /Users/zunairaranjha/.rvm/rubies/ruby-3.1.2/lib/ruby/3.1.0 -r ./siteconf20220901-87319-88ip62.rb extconf.rb
+=======
+current directory: /Users/zunairaranjha/Desktop/projects/DemoApp-main/vendor/ruby/3.1.0/gems/pg-1.4.3/ext
+/Users/zunairaranjha/.rvm/rubies/ruby-3.1.2/bin/ruby -I /Users/zunairaranjha/.rvm/rubies/ruby-3.1.2/lib/ruby/3.1.0 -r ./siteconf20220922-18704-s9t4bq.rb extconf.rb
+>>>>>>> fc65e697 (algo)
 Calling libpq with GVL unlocked
 checking for pg_config... yes
 Using config values from /opt/homebrew/opt/libpq/bin/pg_config
@@ -25,10 +30,17 @@ checking for C99 variable length arrays... yes
 creating extconf.h
 creating Makefile
 
+<<<<<<< HEAD
 current directory: /Users/zunairaranjha/Desktop/projects/Demoapp/App/vendor/ruby/3.1.0/gems/pg-1.4.3/ext
 make DESTDIR\= clean
 
 current directory: /Users/zunairaranjha/Desktop/projects/Demoapp/App/vendor/ruby/3.1.0/gems/pg-1.4.3/ext
+=======
+current directory: /Users/zunairaranjha/Desktop/projects/DemoApp-main/vendor/ruby/3.1.0/gems/pg-1.4.3/ext
+make DESTDIR\= clean
+
+current directory: /Users/zunairaranjha/Desktop/projects/DemoApp-main/vendor/ruby/3.1.0/gems/pg-1.4.3/ext
+>>>>>>> fc65e697 (algo)
 make DESTDIR\=
 compiling gvl_wrappers.c
 In file included from gvl_wrappers.c:6:
@@ -245,7 +257,13 @@ In file included from ./pg.h:62:
 2 warnings generated.
 linking shared-object pg_ext.bundle
 
+<<<<<<< HEAD
 current directory: /Users/zunairaranjha/Desktop/projects/Demoapp/App/vendor/ruby/3.1.0/gems/pg-1.4.3/ext
 make DESTDIR\= install
 /opt/homebrew/opt/coreutils/bin/ginstall -c -m 0755 pg_ext.bundle ./.gem.20220901-87319-1l307s
+=======
+current directory: /Users/zunairaranjha/Desktop/projects/DemoApp-main/vendor/ruby/3.1.0/gems/pg-1.4.3/ext
+make DESTDIR\= install
+/opt/homebrew/bin/ginstall -c -m 0755 pg_ext.bundle ./.gem.20220922-18704-74wano
+>>>>>>> fc65e697 (algo)
 installing pg_ext libraries

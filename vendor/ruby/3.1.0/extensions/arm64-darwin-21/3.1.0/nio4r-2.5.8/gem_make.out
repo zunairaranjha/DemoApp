@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 current directory: /Users/zunairaranjha/Desktop/projects/Demoapp/App/vendor/ruby/3.1.0/gems/nio4r-2.5.8/ext/nio4r
 /Users/zunairaranjha/.rvm/rubies/ruby-3.1.2/bin/ruby -I /Users/zunairaranjha/.rvm/rubies/ruby-3.1.2/lib/ruby/3.1.0 -r ./siteconf20220901-87319-7jt9vd.rb extconf.rb
+=======
+current directory: /Users/zunairaranjha/Desktop/projects/DemoApp-main/vendor/ruby/3.1.0/gems/nio4r-2.5.8/ext/nio4r
+/Users/zunairaranjha/.rvm/rubies/ruby-3.1.2/bin/ruby -I /Users/zunairaranjha/.rvm/rubies/ruby-3.1.2/lib/ruby/3.1.0 -r ./siteconf20220922-18704-vx2n5o.rb extconf.rb
+>>>>>>> fc65e697 (algo)
 checking for unistd.h... yes
 checking for linux/aio_abi.h... no
 checking for linux/io_uring.h... no
@@ -12,10 +17,17 @@ checking for port_event_t in port.h... no
 checking for sys/resource.h... yes
 creating Makefile
 
+<<<<<<< HEAD
 current directory: /Users/zunairaranjha/Desktop/projects/Demoapp/App/vendor/ruby/3.1.0/gems/nio4r-2.5.8/ext/nio4r
 make DESTDIR\= clean
 
 current directory: /Users/zunairaranjha/Desktop/projects/Demoapp/App/vendor/ruby/3.1.0/gems/nio4r-2.5.8/ext/nio4r
+=======
+current directory: /Users/zunairaranjha/Desktop/projects/DemoApp-main/vendor/ruby/3.1.0/gems/nio4r-2.5.8/ext/nio4r
+make DESTDIR\= clean
+
+current directory: /Users/zunairaranjha/Desktop/projects/DemoApp-main/vendor/ruby/3.1.0/gems/nio4r-2.5.8/ext/nio4r
+>>>>>>> fc65e697 (algo)
 make DESTDIR\=
 compiling bytebuffer.c
 bytebuffer.c:308:20: warning: implicit conversion loses integer precision: 'ssize_t' (aka 'long') to 'int' [-Wshorten-64-to-32]
@@ -379,6 +391,12 @@ VALUE rb_ensure(VALUE (*b_proc)(VALUE), VALUE data1, VALUE (*e_proc)(VALUE), VAL
 1 warning generated.
 linking shared-object nio4r_ext.bundle
 
+<<<<<<< HEAD
 current directory: /Users/zunairaranjha/Desktop/projects/Demoapp/App/vendor/ruby/3.1.0/gems/nio4r-2.5.8/ext/nio4r
 make DESTDIR\= install
 /opt/homebrew/opt/coreutils/bin/ginstall -c -m 0755 nio4r_ext.bundle ./.gem.20220901-87319-m2qvm0
+=======
+current directory: /Users/zunairaranjha/Desktop/projects/DemoApp-main/vendor/ruby/3.1.0/gems/nio4r-2.5.8/ext/nio4r
+make DESTDIR\= install
+/opt/homebrew/bin/ginstall -c -m 0755 nio4r_ext.bundle ./.gem.20220922-18704-6pahds
+>>>>>>> fc65e697 (algo)
