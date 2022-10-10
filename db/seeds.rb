@@ -6,13 +6,9 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
  Post.delete_all
-
-<<<<<<< HEAD
- NUM_POSTS = 200000
-=======
  NUM_POSTS = 10000
->>>>>>> fc65e697 (algo)
-NUM_POSTS.times do 
+
+ NUM_POSTS.times do 
   #puts " hello"
 
   Post.create(
