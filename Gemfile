@@ -10,11 +10,7 @@ gem 'faker'
 gem "sprockets-rails"
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 # Use postgresql as the database for Active Record
-<<<<<<< HEAD
  gem "pg"
-=======
-gem "pg", "~> 1.1"
->>>>>>> fc65e697 (algo)
 gem 'simple_form', '~> 5.1'
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
@@ -35,32 +31,25 @@ gem "graphql"
 gem 'rails_rate_limiter'
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
   # gem "kredis"
-<<<<<<< HEAD
 
-=======
 gem 'algoliasearch-rails'
->>>>>>> fc65e697 (algo)
+
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-<<<<<<< HEAD
 gem 'bundler'
 # gem 'bundler-unload'
-=======
 
->>>>>>> fc65e697 (algo)
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
  gem 'rack-attack'
 # Use Sass to process CSS
 gem "sassc-rails"
-<<<<<<< HEAD
-# gem 'nokogiri', '~> 1.13', '>= 1.13.8'
-=======
 
->>>>>>> fc65e697 (algo)
+# gem 'nokogiri', '~> 1.13', '>= 1.13.8'
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
@@ -74,10 +63,9 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
   gem 'bcrypt', '~> 3.1.13'
-<<<<<<< HEAD
+
  gem 'actiontext'
-=======
->>>>>>> fc65e697 (algo)
+
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
@@ -87,23 +75,20 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-<<<<<<< HEAD
   # gem "capybara"
   gem "selenium-webdriver"
   # gem "webdrivers"
   # gem 'webdrivers', '~> 3.1'
-=======
+
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
->>>>>>> fc65e697 (algo)
+
   # gem 'rspec-rails'
 
 end
 # TODO need to check do we only need this gem only in Developement
 gem "graphiql-rails", group: :development
-<<<<<<< HEAD
-=======
 
 gem "algolia", "~> 2.2"
->>>>>>> fc65e697 (algo)
+
