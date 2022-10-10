@@ -6,8 +6,8 @@ module GraphiQL
       if defined?(Sprockets) && Sprockets::VERSION.chr.to_i >= 4
         initializer 'graphiql.assets.precompile' do |app|
           app.config.assets.precompile += %w(
-            graphiql/rails/application.css
-            graphiql/rails/application.js
+            # graphiql/rails/application.css
+            # graphiql/rails/application.js
           )
         end
       end
