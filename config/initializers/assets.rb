@@ -5,7 +5,7 @@ Rails.application.config.assets.version = "1.0"
 
 # Add additional assets to the asset load path.
 # Rails.application.config.assets.paths << Emoji.images_path
-<<<<<<< HEAD
+
 if Rails.env.development?
     Rails.application.config.assets.precompile += %w[graphiql/rails/application.js graphiql/rails/application.css]
   end
@@ -13,10 +13,10 @@ if Rails.env.development?
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
  Rails.application.config.assets.precompile += %w( admin.js admin.css )
-=======
+
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
->>>>>>> fc65e697 (algo)
+
